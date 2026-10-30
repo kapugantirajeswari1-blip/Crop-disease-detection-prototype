@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#052e16" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Shield Background -->
+  <path d="M256 36 L436 104 C436 296 256 468 256 468 C256 468 76 296 76 104 Z" 
+        fill="url(#shieldGrad)" filter="url(#shadow)"/>
+  
+  <!-- Inner Shield Border -->
+  <path d="M256 60 L412 120 C412 284 256 436 256 436 C256 436 100 284 100 120 Z" 
+        fill="none" stroke="#bbf7d0" stroke-width="8" opacity="0.4"/>
+        
+  <!-- Sprouting Leaf Icon -->
+  <path d="M256 160 C320 180 340 260 300 320 C260 380 256 400 256 400 C256 400 252 380 212 320 C172 260 192 180 256 160 Z" 
+        fill="url(#leafGrad)"/>
+        
+  <!-- Leaf Stem & Veins -->
+  <path d="M256 180 L256 380" stroke="#14532d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M256 240 Q285 220 305 230" stroke="#14532d" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M256 280 Q225 260 205 270" stroke="#14532d" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M256 320 Q280 305 295 315" stroke="#14532d" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- AI Pulse Nodes -->
+  <circle cx="256" cy="160" r="14" fill="#facc15" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="340" cy="240" r="10" fill="#facc15" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="172" cy="240" r="10" fill="#facc15" stroke="#ffffff" stroke-width="3"/>
+  
+  <!-- Pulse lines -->
+  <line x1="256" y1="160" x2="340" y2="240" stroke="#facc15" stroke-dasharray="6,4" stroke-width="3" opacity="0.8"/>
+  <line x1="256" y1="160" x2="172" y2="240" stroke="#facc15" stroke-dasharray="6,4" stroke-width="3" opacity="0.8"/>
+</svg>
